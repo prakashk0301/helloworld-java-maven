@@ -1,50 +1,58 @@
-This is my fixed for DPLM-1
-# ========================NEXUS==============================
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.scmgalaxy.mavensample</groupId>
+  <artifactId>my-maven</artifactId>
+  <packaging>jar</packaging>
+  <version>2.0.0</version>
+  <name>my-maven</name>
+  <url>http://maven.apache.org</url>
+	
+<properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<executions>
+				<execution>
+					<id>attach-javadocs</id>
+					<goals>
+						<goal>jar</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+	</build>
+  
 <distributionManagement>
-	<repository>
-		<id>tata</id>
-		<name>Internal Releases</name>
-		<url>http://13.127.163.182:8081/repository/scmgalaxy/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>tata</id>
-		<name>Internal Releases</name>
-		<url>http://52.66.106.91:8081/nexus/content/repositories/snapshot/</url>
-	</snapshotRepository>
-
+    <repository>
+        <id>/prakash</id>
+        <name>pkumar-devops-release</name>
+        <url>http://ec2-52-53-219-136.us-west-1.compute.amazonaws.com:8081/repository/pkumar-devops-release/</url>
+    </repository>
+    <snapshotRepository>
+        <id>prakash</id>
+        <name>pkumar-devops-snapshot</name>
+        <url>http://ec2-52-53-219-136.us-west-1.compute.amazonaws.com:8081/repository/pkumar-devops-snapshot/</url>
+    </snapshotRepository>
 </distributionManagement>
 
 
-===============ARTIFACTORY=================
-<distributionManagement>
-	<repository>
-		<id>rajesh</id>
-		<name>Internal Releases</name>
-		<url>http://13.127.94.210:8081/artifactory/list/rajesh-release/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>rajesh</id>
-		<name>Internal Releases</name>
-		<url>http://13.127.94.210:8081/artifactory/list/rajesh-snapshot/</url>
-	</snapshotRepository>
 
-</distributionManagement>
 
-=====================SETTING.XML=================================
-   <server>
-		<id>rajesh</id>
-		<username>rajesh-user</username>
-		<password>rajesh-user123</password>
-</server>
 
-=======================Setting.xml with Artifactory Setup======================
-<mirror>
-      <id>central</id>
-      <name>Maven Repository Manager running on repo.mycompany.com</name>
-      <url>http://13.127.94.210:8081/artifactory/list/group/</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-
+</project>
