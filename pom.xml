@@ -42,12 +42,12 @@
     <repository>
         <id>/deployment</id>
         <name>demo1-release</name>
-        <url>http://ec2-54-67-7-8.us-west-1.compute.amazonaws.com:8081/repository/demo1-release/</url>
+        <url>http://ec2-54-183-206-231.us-west-1.compute.amazonaws.com:8081/nexus/content/repositories/deployment/</url>
     </repository>
     <snapshotRepository>
-        <id>deployment</id>
-        <name>demo-snapshot</name>
-        <url>http://ec2-54-67-7-8.us-west-1.compute.amazonaws.com:8081/repository/demo-snapshot/</url>
+        <id>deployment1</id>
+        <name>demo1-snapshot</name>
+        <url>http://ec2-54-183-206-231.us-west-1.compute.amazonaws.com:8081/nexus/content/repositories/deployment1/</url>
     </snapshotRepository>
 </distributionManagement>
 
