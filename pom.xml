@@ -40,14 +40,14 @@
   
 <distributionManagement>
     <repository>
-        <id>/prakash</id>
-        <name>pkumar-devops-release</name>
-        <url>http://ec2-52-53-219-136.us-west-1.compute.amazonaws.com:8081/repository/pkumar-devops-release/</url>
+        <id>/deployment</id>
+        <name>demo1-release</name>
+        <url>http://ec2-54-67-7-8.us-west-1.compute.amazonaws.com:8081/repository/demo1-release/</url>
     </repository>
     <snapshotRepository>
-        <id>prakash</id>
-        <name>pkumar-devops-snapshot</name>
-        <url>http://ec2-52-53-219-136.us-west-1.compute.amazonaws.com:8081/repository/pkumar-devops-snapshot/</url>
+        <id>deployment</id>
+        <name>demo-snapshot</name>
+        <url>http://ec2-54-67-7-8.us-west-1.compute.amazonaws.com:8081/repository/demo-snapshot/</url>
     </snapshotRepository>
 </distributionManagement>
 
