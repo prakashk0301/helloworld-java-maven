@@ -41,13 +41,13 @@
 <distributionManagement>
     <repository>
         <id>/deployment</id>
-        <name>demo1-release</name>
-        <url>http://ec2-54-183-206-231.us-west-1.compute.amazonaws.com:8081/nexus/content/repositories/deployment/</url>
+        <name>release-demo2</name>
+        <url>http://54.183.133.71:8093/nexus/content/repositories/deployment-2/</url>
     </repository>
     <snapshotRepository>
         <id>deployment1</id>
-        <name>demo1-snapshot</name>
-        <url>http://ec2-54-183-206-231.us-west-1.compute.amazonaws.com:8081/nexus/content/repositories/deployment1/</url>
+        <name>snapshot-demo2</name>
+        <url>http://54.183.133.71:8093/nexus/content/repositories/deployment/</url>
     </snapshotRepository>
 </distributionManagement>
 
