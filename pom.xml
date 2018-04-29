@@ -40,12 +40,12 @@
   
 <distributionManagement>
     <repository>
-        <id>/deployment</id>
+        <id>/release-demo2</id>
         <name>release-demo2</name>
         <url>http://54.183.133.71:8093/nexus/content/repositories/deployment-2/</url>
     </repository>
     <snapshotRepository>
-        <id>deployment1</id>
+        <id>snapshot-demo2</id>
         <name>snapshot-demo2</name>
         <url>http://54.183.133.71:8093/nexus/content/repositories/deployment/</url>
     </snapshotRepository>
